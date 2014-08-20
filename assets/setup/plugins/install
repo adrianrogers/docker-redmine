@@ -191,7 +191,7 @@ REDMINE_BACKLOGS_VERSION=1.0.6
 if [ -f /redmine/setup/plugins/redmine_backlogs-${REDMINE_BACKLOGS_VERSION}.zip ]; then
         unzip /redmine/setup/plugins/redmine_backlogs-${REDMINE_BACKLOGS_VERSION}.zip -d /redmine/plugins/
 else
-        wget https://github.com/backlogs/redmine_backlogs/archive/v${REDMINE_BACKLOGS_VERSION}.zip -O /tmp/redmine_backlogs-${REDMINE_BACKLOGS_VERSION}.zip
+        wget https://github.com/adrianrogers/redmine_backlogs/archive/v${REDMINE_BACKLOGS_VERSION}.zip -O /tmp/redmine_backlogs-${REDMINE_BACKLOGS_VERSION}.zip
         unzip /tmp/redmine_backlogs-${REDMINE_BACKLOGS_VERSION}.zip -d /redmine/plugins/
         rm -rf /tmp/redmine_backlogs-${REDMINE_BACKLOGS_VERSION}.zip
 fi
